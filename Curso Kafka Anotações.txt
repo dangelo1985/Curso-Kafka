@@ -124,6 +124,12 @@ echo start c:\Kafka\application\bin\windows\kafka-topics.bat --create --zookeepe
  
 echo start c:\Kafka\application\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 2 --partitions 2 --topic product_topic > c:\Kafka\batch\Create_product_topic.bat
  
+ -- Do tópico consumer
+echo start c:\Kafka\application\bin\windows\kafka-topics.bat --create --topic customer_topic --bootstrap-server localhost:9092 --replication-factor 2 --partitions 2 > c:\Kafka\batch\Create_customer_topic.bat
+
+-- Do tópico product
+echo start c:\Kafka\application\bin\windows\kafka-topics.bat --create --topic product_topic  --bootstrap-server localhost:9092 --replication-factor 2 --partitions 2 > c:\Kafka\batch\Create_product_topic.bat
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 10° Passo -> 
